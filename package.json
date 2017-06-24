@@ -7,7 +7,7 @@
     "start": "babel-node app.js",
     "watch": "nodemon --exec 'npm start'",
     "lint": "semistandard",
-    "test": "npm run test:unit && npm run test:integration",
+    "test": "npm run lint && npm run test:unit && npm run test:integration",
     "test:unit": "mocha -r should --compilers js:babel-register 'src/**/*.spec.js'",
     "test:integration": "mocha -r should --compilers js:babel-register 'test/**/*.js'"
   },
