@@ -1,0 +1,20 @@
+branch-defaults:
+  default:
+    environment: Default-Environment
+  master:
+    environment: Default-Environment
+environment-defaults:
+  Default-Environment:
+    branch: master
+    repository: null
+global:
+  application_name: My First Elastic Beanstalk Application
+  default_ec2_keyname: aws-eb
+  default_platform: Node.js
+  default_region: us-east-1
+  instance_profile: null
+  platform_name: null
+  platform_version: null
+  profile: eb-cli
+  sc: git
+  workspace_type: Application
