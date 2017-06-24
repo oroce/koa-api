@@ -1,0 +1,37 @@
+{
+  "name": "koa-api-example",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "start": "babel-node app.js",
+    "watch": "nodemon --exec 'npm start'",
+    "lint": "semistandard",
+    "test": "npm run test:unit && npm run test:integration",
+    "test:unit": "mocha -r should --compilers js:babel-register 'src/**/*.spec.js'",
+    "test:integration": "mocha -r should --compilers js:babel-register 'test/**/*.js'"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "babel-cli": "^6.24.1",
+    "babel-plugin-transform-es2015-modules-commonjs": "^6.24.1",
+    "babel-plugin-transform-object-rest-spread": "^6.23.0",
+    "babel-preset-es2015": "^6.24.1",
+    "dotenv-safe": "^4.0.4",
+    "koa": "^2.3.0",
+    "koa-body": "^2.3.0",
+    "koa-route": "^3.2.0",
+    "request": "^2.81.0",
+    "request-promise-native": "^1.0.4"
+  },
+  "devDependencies": {
+    "mocha": "^3.4.2",
+    "nodemon": "^1.11.0",
+    "proxyquire": "^1.8.0",
+    "semistandard": "^11.0.0",
+    "should": "^11.2.1",
+    "supertest": "^3.0.0"
+  }
+}
