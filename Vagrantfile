@@ -13,7 +13,6 @@ Vagrant.configure("2") do |config|
     echo "cd /vagrant" >> /home/vagrant/.bashrc
 
     # install dependencies
-    add-apt-repository ppa:openjdk-r/ppa -y
     curl -sL http://deb.nodesource.com/setup_7.x | bash -
     apt-get -y install build-essential nodejs git
 
